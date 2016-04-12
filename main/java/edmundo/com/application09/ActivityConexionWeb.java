@@ -13,7 +13,7 @@ public abstract class ActivityConexionWeb extends Activity implements WebConnect
 
     public abstract void usaDatosDeLaWeb(Properties datosDeLaWeb);
 
-    public boolean hayConexion(String url){
+    public boolean hayConexion(){
         boolean siHayconexion = false;
         ConnectivityManager connectivityManager;
         NetworkInfo networkInfo;

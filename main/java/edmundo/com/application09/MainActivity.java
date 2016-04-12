@@ -35,8 +35,9 @@ public class MainActivity extends ActivityConexionWeb {
     }
 
     public void onClick(View view){
-        url = "localhost:80/android/properties.xml";
-        if(hayConexion(url)){
+        url = "http://192.168.43.247:80/android/mis_properties.html";
+        //url = "https://sites.google.com/site/gerardoayalasandata/data/mis_properties.html";
+        if(hayConexion()){
             tareaAsincrona = new TareaAsincronaConexionWeb(this);
             tareaAsincrona.execute(url);
         } else {
